@@ -439,13 +439,13 @@ class RawData():
         if os.path.exists(str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".att.gz") == True and os.path.exists(str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".att") == False:
                 os.system("gunzip -k "+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".att.gz")
         if os.path.exists(str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf.gz") == True and os.path.exists(str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf") == False:
-                os.system("gunzip -k "+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf.gz")
+                os.system("niprefilter2 indir="+str(self.obsid_dir)+" infile="+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf.gz outfile="+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf clobber=YES")
         if os.path.exists(str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".att.gz") == True and os.path.exists(str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".att") == True:
                 os.system("rm "+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".att")
                 os.system("gunzip -k "+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".att.gz")
         if os.path.exists(str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf.gz") == True and os.path.exists(str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf") == True:
                 os.system("rm "+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf")
-                os.system("gunzip -k "+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf.gz")
+                os.system("niprefilter2 indir="+str(self.obsid_dir)+" infile="+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf.gz outfile="+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf clobber=YES")
         
         os.system("nimaketime "+str(self.obsid_dir)+"/auxil/ni"+str(self.obsid)+".mkf "+str(self.obsid_dir)+"/auxil/"+str(self.obsid)+"_all.gti mingti=100.0")
         if os.path.isfile(str(self.obsid_dir)+"/auxil/"+str(self.obsid)+"_all.gti") == True:
