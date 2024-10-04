@@ -11,7 +11,7 @@
 3. Run nicer.py as <code>python nicer.py</code> 
 4. Input the some parameters (Source Type, Source Name, RA, DEC) and push Enter. You can input any string for Source Type and Source Name.
 
-## EXtracted products
+## Extracted products
 - All products are outputed in the <code>/ObsID/analysis/</code>.
 - <code>lc_ObsID.pdf</code> shows the band-sliced light curve and each GTI time interval.
 - All light curve fits file are in <code>/ObsID/analysis/lc/</code>. The files with <code>_bary</code> mean that they are barycentric-corrected.
@@ -19,5 +19,7 @@
 - The GTI-divided spectra and response files are in <code>/ObsID/analysis/spec/block_Number</code>. If there is only one GTI in the ObsID, the GTI-divided spectra are not extracted. 
 
 ## Enviroment
+This code can be runned with Python 3 and Heasoft newer than 6.32.
 
 ## History
+2024-10-04 new version 0.0 is created.
