@@ -6,8 +6,8 @@
 --  📧 inoue *at* cr.scphys.kyoto-u.ac.jp
 
 ## How to use
-- Download the NICER data from the HEASARC archive
-- 
+1. Download the NICER data from the HEASARC archive
+2. Write the path to the data in line. 
 
 ## Enviroment
 
