@@ -654,14 +654,14 @@ class RawData():
 
 
 def main():
-    stellar_type = input("Stellar Type: ")
-    stellar_name = input("Stellar Name: ")
+    source_type = input("Source Type: ")
+    source_name = input("Source Name: ")
     ra = input("RA: ")
     dec = input("DEC: ")
     
     Obs_id = "7555020203" #input Obs-ID
-    star_path = "/Users/inoue_22/Desktop/Notsu/CR_Dra/7555020203" #input the path to the directory of the Obs-ID
-    Star = RawData(str(stellar_type), str(stellar_name), ra, dec, Obs_id, star_path)
+    star_path = "/Users/Desktop/CR_Dra/7555020203" #input the path to the directory of the Obs-ID
+    Star = RawData(str(source_type), str(source_name), ra, dec, Obs_id, star_path)
     Star.make_dir()
     Star.nicerl2()
     Star.barycorr()
