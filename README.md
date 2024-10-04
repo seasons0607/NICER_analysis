@@ -7,7 +7,7 @@
 
 ## How to use
 1. Download the NICER data from the HEASARC archive
-2. Write the Obs-ID and the path to the data in line 662 and 663, respectively.
+2. Write the Obs-ID and the path to the data in line 662 and 663 of <code>nicer.py</code>, respectively.
 3. Run nicer.py as <code>python nicer.py</code> 
 4. Input the some parameters (Source Type, Source Name, RA, DEC) and push Enter. You can input any string for Source Type and Source Name.
 
