@@ -7,7 +7,8 @@
 
 ## How to use
 1. Download the NICER data from the HEASARC archive
-2. Write the path to the data in line. 
+2. Write the Obs-ID and the path to the data in line , respectively.
+3.  
 
 ## Enviroment
 
