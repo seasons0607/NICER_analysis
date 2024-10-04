@@ -16,7 +16,10 @@
 - <code>lc_ObsID.pdf</code> shows the band-sliced light curve and each GTI time interval.
 - All light curve fits file are in <code>/ObsID/analysis/lc/</code>. The files with <code>_bary</code> mean that they are barycentric-corrected.
 - The ObsID-averaged spectrum and response files are in <code>/ObsID/analysis/spec/block_all</code>.
-- The GTI-divided spectra and response files are in <code>/ObsID/analysis/spec/block_Number</code>. If there is only one GTI in the ObsID, the GTI-divided spectra are not extracted. 
+- The GTI-divided spectra and response files are in <code>/ObsID/analysis/spec/block_Number</code>. If there is only one GTI in the ObsID, the GTI-divided spectra are not extracted.
+
+## Extra Option
+- If you change the criteria of the screening of <code>nicerl2</code>, you can add them in line 61. Please also see the help page of nicerl2.
 
 ## Enviroment
 This code can be runned with Python 3 and Heasoft newer than 6.32.
