@@ -1,7 +1,7 @@
 # NICER automated extraction tool
 ## Overview
 - This tool is a simple script to extract light curve and Obs-ID averaged and GTI-divided spectra of the NICER data.
-- When you use this script in your paper, please cite Inoue et al., 2024, MNRAS, ??, ??.
+- When you use this script in your paper, please cite [Inoue et al., 2024, MNRAS, 541, 1403](https://academic.oup.com/mnras/article/541/2/1403/8177118).
 - If you have any bugs, please let me know!
 --  📧 inoue *at* cr.scphys.kyoto-u.ac.jp
 
